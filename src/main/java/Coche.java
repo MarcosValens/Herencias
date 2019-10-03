@@ -1,4 +1,4 @@
-public class Coche extends Vehiculo{
+public abstract class Coche extends Vehiculo{
     private int puertas;
 
     public Coche(String color, String numBastidor, String matricula, int ruedas, int cilindrada, int puertas) {
@@ -13,9 +13,5 @@ public class Coche extends Vehiculo{
     public void setPuertas(int puertas) {
         this.puertas = puertas;
     }
-
-    @Override
-    public boolean tieneClaxon(){
-        return true;
-    };
+    abstract public boolean isElectric();
 }

@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Vehiculo {
+public abstract class Vehiculo {
     private String color;
     private String numBastidor;
     private String matricula;
@@ -55,9 +55,7 @@ public class Vehiculo {
         this.cilindrada = cilindrada;
     }
 
-    public boolean tieneClaxon(){
-        return false;
-    }
+    abstract public boolean tieneClaxon();
 
     @Override
     public boolean equals(Object o) {
